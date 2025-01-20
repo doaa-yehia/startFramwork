@@ -1,0 +1,13 @@
+section {
+    background-color: #2C3E50;
+
+    i {
+        .circleStyle {
+            font-size: small;
+        }
+      
+    }
+    .lastP{
+        background-color: #1A252F;
+       }
+}

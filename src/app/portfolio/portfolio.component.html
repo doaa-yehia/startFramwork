@@ -1,0 +1,64 @@
+<section class="my-5 py-5">
+    <div class="container">
+        <app-child >
+            <h2 class="text-center text-dark text-uppercase fw-bold">portfolio component</h2>
+        </app-child>
+        <app-line class="text-dark text-center"></app-line>
+        <div class="row g-4 my-4">
+            <div class="col-md-6 col-lg-4">
+                <figure (click)="show(img1)">
+                    <img #img1  class="img-fluid rounded" src="/images/poert1.png" alt="">
+                    <figcaption class="caption rounded d-flex justify-content-center align-items-center">
+                        <i class="text-white fa-solid fa-plus fa-6x"></i>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <figure (click)="show(img2)" class="rounded">
+                    <img #img2  class="img-fluid rounded" src="/images/port2.png" alt="">
+                    <figcaption class="caption rounded d-flex justify-content-center align-items-center">
+                        <i class="text-white fa-solid fa-plus fa-6x"></i>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <figure (click)="show(img3)" class="rounded">
+                    <img #img3 class="img-fluid rounded" src="/images/port3.png" alt="">
+                    <figcaption class="caption rounded d-flex justify-content-center align-items-center">
+                        <i class="text-white fa-solid fa-plus fa-6x"></i>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <figure (click)="show(img4)" class="rounded">
+                    <img #img4 class="img-fluid rounded" src="/images/poert1.png" alt="">
+                    <figcaption class="caption rounded d-flex justify-content-center align-items-center">
+                        <i class="text-white fa-solid fa-plus fa-6x"></i>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <figure (click)="show(img5)" class="rounded">
+                    <img #img5 class="img-fluid rounded" src="/images/port2.png" alt="">
+                    <figcaption class="caption rounded d-flex justify-content-center align-items-center">
+                        <i class="text-white fa-solid fa-plus fa-6x"></i>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <figure (click)="show(img6)" class="rounded">
+                    <img #img6 class="img-fluid rounded" src="/images/port3.png" alt="">
+                    <figcaption class="caption rounded d-flex justify-content-center align-items-center">
+                        <i class="text-white fa-solid fa-plus fa-6x"></i>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section (click)="closelightBox($event)" #lightBox class="position-fixed top-0 start-0 end-0 bottom-0 bg-info bg-opacity-50  d-none justify-content-center align-items-center">
+<picture (click)="stopPropagation($event)" class="w-50">
+    <img  class="img-fluid" [src]="imgUrl" alt="picture">
+</picture>
+</section>

@@ -1,0 +1,29 @@
+<section class="my-5 py-3">
+    <div class="container-fluid">
+        <app-child>
+            <h2 class="text-center text-dark text-uppercase fw-bold mt-5">contact Section</h2>
+        </app-child>
+        <app-line class="text-dark text-center"></app-line>
+        <div class="w-75 mt-5 mx-auto p-3">
+            <label #unLabel for="userName" class="text-info transition  position-relative ">user Name:</label>
+            <input id="userName" type="text" class="form-control  border-0 border-bottom py-3 mb-4" placeholder="userName" (input)="showLable($event,unLabel)">
+            
+            <label #uALabel for="userAge" class="text-info transition  position-relative ">user Age:</label>
+            <input id="userAge" type="text" class="form-control border-0 border-bottom py-3 mb-4" placeholder="userAge" (input)="showLable($event,uALabel)">
+            
+            <label #uELabel for="userEmail" class="text-info transition  position-relative ">user Email:</label>
+            <input id="userEmail" type="email" class="form-control border-0 border-bottom py-3 mb-4" placeholder="userEmail" (input)="showLable($event,uELabel)">
+            
+            <label #uPLabel for="userPassword" class="text-info transition  position-relative ">user Password:</label>
+            <input id="userPassword" type="password" class="form-control border-0 border-bottom py-3 mb-4" placeholder="userPassword" (input)="showLable($event,uPLabel)">
+
+            <button class="btn btn-info text-white mb-5">Send Message</button>
+
+        </div>
+
+
+
+    </div>
+
+
+</section>

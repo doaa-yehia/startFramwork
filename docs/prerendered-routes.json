@@ -1,0 +1,9 @@
+{
+  "routes": {
+    "/https://github.com/doaa-yehia/startFramwork.git": {},
+    "/https://github.com/doaa-yehia/startFramwork.git/about": {},
+    "/https://github.com/doaa-yehia/startFramwork.git/contact": {},
+    "/https://github.com/doaa-yehia/startFramwork.git/home": {},
+    "/https://github.com/doaa-yehia/startFramwork.git/portfolio": {}
+  }
+}

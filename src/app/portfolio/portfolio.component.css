@@ -1,0 +1,20 @@
+figure {
+    position: relative;
+    transition: opacity .5s ;
+    &:hover .caption {
+        opacity: .75;
+    }
+
+    figcaption {
+        position: absolute;
+        inset: 0;
+        background-color: #1ABC9C;
+        opacity: 0;
+        transition: opacity .5s ;
+
+    }
+}
+#lightBox{
+    background-color: #c2dbfe59;
+    z-index: 10000000000;
+}
